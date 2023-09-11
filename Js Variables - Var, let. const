@@ -1,0 +1,75 @@
+JavaScript Variables
+In a programming language, variables are used to store data values.
+JavaScript uses the keywords var, let and const to declare variables.
+An equal sign is used to assign values to variables.
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+let x;
+x = 6;
+
+JavaScript Variables:-
+  Variables are Containers for Storing Data
+
+JavaScript Variables can be declared in 4 ways:
+Automatically
+Using var
+Using let
+Using const
+
+The var keyword was used in all JavaScript code from 1995 to 2015.
+The let and const keywords were added to JavaScript in 2015.
+The var keyword should only be used in code written for older browsers.
+EXAMPLE:
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+The two variables price1 and price2 are declared with the const keyword.
+These are constant values and cannot be changed.
+The variable total is declared with the let keyword.
+The value total can be changed.
+
+When to Use var, let, or const?
+1. Always declare variables
+2. Always use const if the value should not be changed
+3. Always use const if the type should not be changed (Arrays and Objects)
+4. Only use let if you can't use const.
+5. Only use var if you MUST support old browsers.
+
+Let variable:
+The let keyword was introduced in ES6 (2015)
+Variables defined with let cannot be Redeclared
+Variables defined with let must be Declared before use
+Variables defined with let have Block Scope
+
+Cannot be Redeclared
+Variables defined with let can not be redeclared.
+You can not accidentally redeclare a variable declared with let.
+With var you can:
+var x = "John Doe";
+var x = 0;
+
+
+Block Scope
+Before ES6 (2015), JavaScript had Global Scope and Function Scope.
+ES6 introduced two important new JavaScript keywords: let and const.
+These two keywords provide Block Scope in JavaScript.
+Variables declared inside a { } block cannot be accessed from outside the block:
+Example
+{
+  let x = 2;
+}
+// x can NOT be used here
+
+Variables declared with the var keyword can NOT have block scope.
+Variables declared inside a { } block can be accessed from outside the block.
+Example
+{
+  var x = 2;
+}
+// x CAN be used here
+
+
+Redeclaring Variables
+Redeclaring a variable using the var keyword can impose problems.
+Redeclaring a variable inside a block will also redeclare the variable outside the block:
+Redeclaring a variable using the let keyword can solve this problem.
+Redeclaring a variable inside a block will not redeclare the variable outside the block:
