@@ -1,0 +1,75 @@
+ #  String are always stored in double or single quotes.
+ #  If we store the number in double or single quotes, it consider as a string.
+ #  You can use quotes inside a string, as long as they don't match the quotes surrounding the string.
+       EXAMPLE : "It's alright" ,  "He is called 'Johnny'" ,  'He is called "Johnny"'
+    but the best way is, using the backslash :  "so-called "Vikings" from the north."
+ #  To find the length of a string, we can use the built-in length property.
+       EXAMPLE : let length = variablename.length 
+
+
+STRING METHODS:-
+1.Extracting String Parts:
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)       # the index number (position number) of the string is start from 0.
+substr(start, length)
+
+
+2.Replacing String content:
+replace()
+replaceAll()
+# The replace() method replaces a specified value with another value in a string.
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
+# the above method replace the first word as Microsoft in para, if there is lost of words, we need to chage that, 
+we can use replaceAll()
+
+3.Converting to Upper and Lower Case:
+A string is converted to upper case with toUpperCase()
+A string is converted to lower case with toLowerCase()
+  EXAMPLE : variablename.toUpperCase()
+
+4. String concatination:
+concat() joins two or more strings
+  EXAMPLE : text = "Hello" + " " + "World!";
+if we want to add a space between two we can use " ".
+# also f we concat a number and string like 3 + "ramya", the result is 3ramya.
+
+5.String trim() trimStart() trimEnd()
+These three methods are used to remove the unwanted whitespace in the string.
+
+6.JavaScript String split()
+A string can be converted to an array with the split() method:
+text.split(",")    // Split on commas
+text.split(" ")    // Split on spaces
+text.split("|")    // Split on pipe
+EXAMPLES : 
+1.let sentence = "This is a sample sentence.";
+let wordsArray = sentence.split(" ");
+// Output: ["This", "is", "a", "sample", "sentence."]
+
+2.let csvData = "John,Doe,30,New York";
+let dataArray = csvData.split(",");
+// Output: ["John", "Doe", "30", "New York"]
+
+3.let sentence = "This is a sample sentence.";
+let wordsArray = sentence.split(" ", 3);
+// Output: ["This", "is", "a"]
+
+4.let data = "apple,orange,banana;grape";
+let items = data.split(/[;,]/);
+// Output: ["apple", "orange", "banana", "grape"]
+
+
+
+** Automatic replacing of variables with real values is called string interpolation **
+let firstName = "John";
+let lastName = "Doe";
+let text = `Welcome ${firstName}, ${lastName}!`
+For this method we can back ticks instead of qoutes
+
+
+
+
+
+
